@@ -7,20 +7,13 @@ package jsonBaloto;
 
 import java.util.ArrayList;
 
+
 public class Baloto {
-    private String Baloto;
+
     private int BalotoId;
-    private String Numeros_Ganadores;
-    
-    private ArrayList<DetallesSorteo> detalle;
+    private int[] Numeros_Ganadores;
 
-    public String getBaloto() {
-        return Baloto;
-    }
-
-    public void setBaloto(String baloto) {
-        Baloto = baloto;
-    }
+    private ArrayList<DetallesSorteo> Ganadores;
 
     public int getBalotoId() {
         return BalotoId;
@@ -30,19 +23,20 @@ public class Baloto {
         BalotoId = balotoId;
     }
 
-    public String getNumeros_Ganadores() {
+    public int[] getNumeros_Ganadores() {
         return Numeros_Ganadores;
     }
 
-    public void setNumeros_Ganadores(String numeros_Ganadores) {
+    public void setNumeros_Ganadores(int[] numeros_Ganadores) {
         Numeros_Ganadores = numeros_Ganadores;
     }
 
-    public ArrayList<DetallesSorteo> getDetalle() {
-        return detalle;
+    public ArrayList<DetallesSorteo> getGanadores() {
+        return Ganadores;
     }
 
-    public void setDetalle(ArrayList<DetallesSorteo> detalle) {
-        this.detalle = detalle;
+    public void setGanadores(ArrayList<DetallesSorteo> ganadores) {
+        Ganadores = ganadores;
     }
 }
+

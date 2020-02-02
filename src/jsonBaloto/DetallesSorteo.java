@@ -5,13 +5,12 @@
  */
 package jsonBaloto;
 
-
 public class DetallesSorteo {
     private int SorteoId;
-    private String Numeros ;
+    private int[] Numeros ;
 
 
-    public DetallesSorteo(int sorteoId, String numeros) {
+    public DetallesSorteo(int sorteoId, int[] numeros) {
         SorteoId = sorteoId;
         Numeros = numeros;
     }
@@ -24,11 +23,11 @@ public class DetallesSorteo {
         SorteoId = sorteoId;
     }
 
-    public String getNumeros() {
+    public int[] getNumeros() {
         return Numeros;
     }
 
-    public void setNumeros(String numeros) {
+    public void setNumeros(int[] numeros) {
         Numeros = numeros;
     }
 }
